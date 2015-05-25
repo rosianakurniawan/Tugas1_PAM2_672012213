@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Media Pembelajaran Pemrograman Berorientasi Object</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<script src="js/jquery.js"></script>
+<!-- kodingClass-->
+<script src="js/jquery.mobile.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="keteranganClassdanObject" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			 <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left" data-ajax="false">Home</a>
+			 <a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-right">Back</a>
+			<h1>Class dan Object</h1>
+		</div>
+		<div data-role="content">
+			<p align = "justify">
+			<b>
+				Class</b><br>
+				Dalam dunia nyata, kita sering berinteraksi dengan banyak
+				object. Kita tinggal di rumah, rumah adalah suatu object, dalam
+				terminology OOP rumah kita adalah instance dari suatu class rumah.
+				Misal kita tinggal dalam suatu komplek perumahan, sebelum membangun
+				rumah, developer akan berpanduan pada rancang bangun rumah (blue
+				print) yang telah dibuat seorang arsitek. Blue print dari rumah adalah
+				class, sedang rumah yang kita tinggal (rumah-rumah dalam komplek)
+				disebut instance.
+				Manusia adalah sebuah class ; anda, saya, kita adalah instance dari class
+				manusia.
+				<br><br><b>
+				Object</b><br>
+				Object adalah instance dari class. Jika class secara umum
+				merepresentasikan (template) sebuah object, sebuah instance adalah
+				representasi nyata dari class itu sendiri.
+				<br><br><b>
+				Bekerja dengan Object</b><br>
+				Ketika anda membuat program dengan Java, anda akan mendefinisikan
+				beberapa class, anda juga akan menggunakan class untuk membuat suatu instance dan tentu saja akan bekerja dengan instance-instance
+				tersebut.<br>
+				Ketika anda memanggil operator new terjadi beberapa hal :<br>
+				1. Instance baru yang telah diberikan oleh class dicipakan<br>
+				2. Memori dialokasikan untuk instance tersebut<br>
+				3. Special Method didefinisikan pada class (Konstruktor)<br><br>
+				Konstruktor : Suatu method tertentu untuk membuat dan
+				menginsialisasi sebuah instance baru dari class. Konstruktor
+				menginisialiasasi object-object baru dan variable-variabel.
+				Pemberian nama method Konstruktor harus sama dengan nama
+				classnya. (Penjelasan tentang Konstruktor akan dibahas dalam
+				pertemuan berikutnya)<br>
+			</p>			
+		</div>
+		<div data-role="footer" data-position="fixed">   
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#keteranganClassdanObject" data-icon="bullets" class="ui-btn-active ui-state-persist">Konsep</a></li>
+					<li><a href="#kodingClass" data-icon="edit" data-ajax="false">Koding</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+<div data-role="page" id="kodingClass" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left" data-ajax="false">Home</a>
+			 
+			<a href="#" data-rel="back">Back</a>
+			<h1>Koding Class</h1>
+		</div>
+		<div data-role="content">
+			<p align = "justify">
+				Membuat Object<br>
+				Untuk membuat object, kita menggunakan perintah new dengan sebuah
+				nama class yang akan dibuat sebagai instance dari class tersebut.<br>
+				<ol>
+				<li>String str = new String();</li>
+				<li>Random r = new Random();</li>
+				<li>Pegawai p2 = new PEgawai();</li>
+				<li>Date hari = new Date();;</li>
+				</ol>
+				
+				<br>
+				hari adalah object reference dari class Date yang akan digunakan untuk
+				mengakses class Date.
+				Sedangkan operator new adalah operator yang akan menghasilkan hari
+				sebagai reference ke instance dari class Date().
+			</p>			
+		</div>
+		<div data-role="footer" data-position="fixed">   
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#keteranganClassdanObject" data-icon="bullets"  data-ajax="false" >Konsep</a></li>
+					<li><a href="#kodingClass" data-icon="edit" data-ajax="false" class="ui-btn-active ui-state-persist">Koding</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

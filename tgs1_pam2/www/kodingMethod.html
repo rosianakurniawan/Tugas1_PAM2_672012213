@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Media Pembelajaran Pemrograman Berorientasi Object</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<script src="js/jquery.js"></script>
+<!-- kodingClass-->
+<script src="js/jquery.mobile.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="keteranganMethod" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			 <a href="#" data-rel="home" data-icon="home" data-ajax="false">Home</a>
+			<h1>METHOD</h1>
+		</div>
+		<div data-role="content">
+			<p>
+			<b>
+				Definisi</b><br>
+				
+				Metode menentukan perilaku objek,yakni apa yang terjadiketika objek
+				itu dibuat serta berbagai operasi yang dapat dilakukan objek sepanjang
+				hidupnya.
+				Metode memiliki 4 (empat) bagian dasar :
+				<ul>
+					<li>Nama metode</li>
+					<li>Tipe Objek atau tipe primitive yang dikembalikan metode.</li>
+					<li>Daftar parameter.</li>
+					<li>Badan atau isi metode.</li>
+				</ul>
+				
+				Tiga bagian pertama dari definisi metode membentuk apa yang disebut
+				sebagai penanda (signature) metode dan mengindikasikan informasi
+				penting tentang metode itu sendiri. Dengan kata lain, nama metode
+				tersebut dari metode=-metode lain dalam program. Dalam java kita dapat
+				memiliki metode-metode berbeda yang memiliki nama sama tetapi
+				berbeda tipe kembalian atau daftar argumennya, sehingga bagian-bagian
+				definisi metode ini menjadi penting. Ini disebut overloading metode.
+				Definisi dasar metode adalah sebagai berikut :
+				Tipekembalian namametode (type1 arg1, type2 arg2, type3 arg3 ..)<br>
+				{<br>
+				…………<br>
+				}<br>
+				dalam contoh diatas tipe kembalian adalah tipe nilai yang dikembalikan
+				oleh metode. Ini bias berupa salah satu tipe primitive,nama kelas, atau
+				void bila metode tidak mengembalikan nilai sama sekali.
+				<br><br><b>
+				<br>
+			</p>			
+		</div>
+		<div data-role="footer" data-position="fixed">   
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#keteranganMethod" data-icon="home" class="ui-btn-active">Konsep</a></li>
+					<li><a href="#kodingMethod" data-icon="gear" data-ajax="false">Koding</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+<div data-role="page" id="kodingMethod" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			 <a href="#" data-rel="back">Back</a>
+			<h1>Koding Class</h1>
+		</div>
+		<div data-role="content">
+			<p>
+				Contoh Program :<br>
+				
+				class KelasRentang {<br>
+				int [] buatRentang(int lower, int upper) {<br>
+				int arr[] = new int [ {upper – lower ) + 1 ];<br>
+				for (int I = 0 ; i< arr.length;i++) {<br>
+				arr[i] = lower++;<br>
+				}<br>
+				return arr;<br>
+				}<br>
+				public static void main(String [] args) {<br>
+				int inilarik[];<br>
+				KelasRentang iniRentang = new KelasRentang ();<br>
+				Inilarik = iniRentang.buatRentang(5,20);<br>
+				System.out.print(“Lariknya adalah : [ “ );<br>
+				
+				System.out.print(inilarik[i] + “ “);<br>
+				}<br>
+				System.out.println(“] “);<br>
+				}<br>
+				}<br>
+			</p>			
+		</div>
+		<div data-role="footer" data-position="fixed">   
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#keteranganClassdanObject" data-icon="home" class="ui-btn-active" data-ajax="false">Konsep</a></li>
+					<li><a href="#kodingClass.html" data-icon="gear" data-ajax="false">Koding</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
